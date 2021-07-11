@@ -1,0 +1,1518 @@
+<!--      　　　___           ___           ___           ___           ___                    ___           ___       ___           ___     
+　　　　　　   /\  \         /\  \         /\__\         |\__\         /\  \                  /\  \         /\__\     /\  \         /\  \    
+  　　　　　　 \:\  \       /::\  \       /:/  /         |:|  |       /::\  \                /::\  \       /:/  /    /::\  \       /::\  \   
+          　　  \:\  \     /:/\:\  \     /:/__/          |:|  |      /:/\ \  \              /:/\:\  \     /:/  /    /:/\:\  \     /:/\:\  \  
+          　　  /::\  \   /::\~\:\  \   /::\  \ ___      |:|__|__   _\:\~\ \  \            /::\~\:\__\   /:/  /    /:/  \:\  \   /:/  \:\  \ 
+          　　 /:/\:\__\ /:/\:\ \:\__\ /:/\:\  /\__\ ____/::::\__\ /\ \:\ \ \__\          /:/\:\ \:|__| /:/__/    /:/__/ \:\__\ /:/__/_\:\__\
+        　　  /:/  \/__/ \/_|::\/:/  / \/__\:\/:/  / \::::/~~/~    \:\ \:\ \/__/          \:\~\:\/:/  / \:\  \    \:\  \ /:/  / \:\  /\ \/__/
+        　　 /:/  /         |:|::/  /       \::/  /   ~~|:|~~|      \:\ \:\__\             \:\ \::/  /   \:\  \    \:\  /:/  /   \:\ \:\__\  
+        　　 \/__/          |:|\/__/        /:/  /      |:|  |       \:\/:/  /              \:\/:/  /     \:\  \    \:\/:/  /     \:\/:/  /  
+        　　                |:|  |         /:/  /       |:|  |        \::/  /                \::/__/       \:\__\    \::/  /       \::/  /   
+        　　                 \|__|         \/__/         \|__|         \/__/                  ~~            \/__/     \/__/         \/__/    
+
+   ┌───┐   ┌───┬───┬───┬───┐   ┌───┬───┬───┬───┐   ┌───┬───┬───┬───┐  ┌───┬───┬───┐
+   │ Esc  │   │  F1  │  F2  │  F3  │  F4  │   │  F5  │  F6  │  F7  │  F8  │   │  F9  │ F10  │ F11  │ F12  │  │ P/S  │ S L  │ P/B  │
+   └───┘   └───┴───┴───┴───┘   └───┴───┴───┴───┘   └───┴───┴───┴───┘  └───┴───┴───┘
+   ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐ ┌───┬───┬───┐
+   │ ~ `  │ ! 1  │ @ 2  │ # 3  │ $ 4  │ % 5  │ ^ 6  │ & 7  │ * 8  │ ( 9  │ ) 0  │ _ -  │ + =  │    BacSp     │ │ Ins  │ Hom  │ PUp  │
+   ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─────┤ ├───┼───┼───┤
+   │   Tab    │  Q   │  W   │  E   │  R   │  T   │  Y   │  U   │  I   │  O   │  P   │ { [  │ } ]  │   | \    │ │ Del  │ End  │ PDn  │
+   ├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────┤ └───┴───┴───┘
+   │    Caps    │  A   │  S   │  D   │  F   │  G   │  H   │  J   │  K   │  L   │ : ;  │ " '  │     Enter      │
+   ├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴────────┤         ┌───┐
+   │     Shift      │  Z   │  X   │  C   │  V   │  B   │  N   │  M   │ < ,  │ > .  │ ? /  │       Shift        │         │  ↑  │
+   ├─────┬──┴─┬─┴──┬┴───┴───┴───┴───┴───┴──┬┴───┼───┴┬────┬────┤ ┌───┼───┼───┐
+   │   Ctrl   │        │  Alt   │                     Space                    │   Alt  │   Fn   │   ＝   │  Ctrl  │ │  ←  │  ↓  │  →  │
+   └─────┴────┴────┴───────────────────────┴────┴────┴────┴────┘ └───┴───┴───┘
+
+              写字楼里写字间，写字间里程序员；程序人员写程序，又拿程序换酒钱。酒醒只在网上坐，酒醉还来网下眠；酒醉酒醒日复日，网上网下年复年。
+              但愿老死电脑间，不愿鞠躬老板前；奔驰宝马贵者趣，公交自行程序员。别人笑我忒疯癫，我笑自己命太贱；不见满街漂亮妹，哪个归得程序员？
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="google-site-verification" content="nZLRt2TSr_hyrtOpExvCPWYNAt_QT0NsctUkGqjvOgo" />
+  
+  <title>Python3 爬虫实战 — 瓜子全国二手车 | YS-THX</title>
+  
+  
+
+  
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+  
+  <meta name='theme-color' content='#f24e32'>
+  <meta name='msapplication-TileColor' content='#f24e32'>
+  <meta name='msapplication-config' content='https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicons/browserconfig.xml'>
+  
+  <!-- 360 -->
+  <meta name="360-site-verification" content="d98acd5dccc92e495179410dd58186be" />
+  <!-- 360自动收录 -->
+  <script>
+    (function () {
+      var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+      document.write('<script src="' + src + '" id="sozz"><\/script>');
+    })();
+  </script>
+  <!-- sogou -->
+  <meta name="sogou_site_verification" content="l0yGeAV56W" />
+  <!-- link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
+  
+  
+  <link rel='shortcut icon' type='image/x-icon' href='https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.4/images/favicon.ico'>
+  <link rel='icon' type='image/x-icon' sizes='32x32' href='https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.4/images/favicon-32x32.png'>
+  <link rel='apple-touch-icon' type='image/png' sizes='180x180' href='https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.4/images/apple-touch-icon.png'>
+  <link rel='mask-icon' color='#f24e32' href='https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.4/images/safari-pinned-tab.svg'>
+  <link rel='manifest' href='https://cdn.jsdelivr.net/gh/xaoxuu/cdn-favicon@19.9.7/site.webmanifest'>
+  
+
+  
+  <link rel="shortcut icon" type='image/x-icon' href="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.4/images/favicon.ico">
+  
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.1.0/css/style.css">
+
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width = num + "%";
+    }
+  </script>
+
+  
+  
+  <!-- Google Adsense -->
+  <!--<script data-ad-client="ca-pub-1913211097936916" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+<meta name="generator" content="Hexo 5.1.1"></head>
+<body>
+  
+  
+<div class="cover-wrapper">
+  <cover class='cover post half'>
+    
+    
+  <h1 class='title'>YS-THX'S BLOG</h1>
+
+
+  <div class="m_search">
+    <form name="searchform" class="form u-search-form">
+      <input type="text" class="input u-search-input" placeholder="世界之大，探索一下！" />
+      <i class="icon fas fa-search fa-fw"></i>
+    </form>
+  </div>
+
+<div class='menu navgation'>
+  <ul class='h-list'>
+    
+      
+        <li>
+          <a class="nav home" href="/"
+            
+            
+            id="home">
+            <i class='fas fa-home fa-fw'></i>&nbsp;主页
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/categories/"
+            
+            
+            id="categories">
+            <i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/tags/"
+            
+            
+            id="tags">
+            <i class='fas fa-tags fa-fw'></i>&nbsp;标签
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/friends/"
+            
+            
+            id="friends">
+            <i class='fas fa-users fa-fw'></i>&nbsp;朋友
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/comments/"
+            
+            
+            id="comments">
+            <i class='fas fa-comments fa-fw'></i>&nbsp;留言
+          </a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+    
+    <br>
+    <!-- Hitokoto 一言 -->
+    <!--<p id="hitokoto"></p>
+			<script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+      <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>-->
+    <!-- 打字特效 -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <div style="text-align: center;font-weight: bold;color: #1BC3FB;">
+      <span id="subtitle"></span>
+      <span id="typed-cursor"></span>
+    </div>
+    <script>
+      var typed = new Typed("#subtitle", { strings: ["Live a good life, write some good code !!!", "愿自己的努力终将获得回报。", "花开不是为了花落，而是为了开的更加灿烂。", "没有伞的孩子必须努力奔跑！", "欲望以提升热忱，毅力以磨平高山。", "如果放弃太早，你永远都不知道自己会错过什么。", "没有礁石，就没有美丽的浪花；没有挫折，就没有壮丽的人生。"], startDelay: 1000, typeSpeed: 100, loop: !0, backSpeed: 60, backDelay: 2000, showCursor: !0 })
+    </script>
+  </cover>
+  <header class="l_header pure">
+  <div id="loading-bar-wrapper">
+    <div id="loading-bar" class="pure"></div>
+  </div>
+
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href='/' >
+        
+          YS-THX
+        
+      </a>
+			<div class='menu navgation'>
+				<ul class='h-list'>
+          
+  					
+  						<li>
+								<a class="nav flat-box" href="/"
+                  
+                  
+                  id="home">
+									<i class='fas fa-home fa-fw'></i>&nbsp;主页
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/archives/"
+                  
+                  
+                  id="archives">
+									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/friends/"
+                  
+                  
+                  id="friends">
+									<i class='fas fa-users fa-fw'></i>&nbsp;朋友
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/comments/"
+                  
+                  
+                  id="comments">
+									<i class='fas fa-comments fa-fw'></i>&nbsp;留言
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/about/"
+                  
+                  
+                    target="_blank"
+                  
+                  id="about">
+									<i class='fas fa-info-circle fa-fw'></i>&nbsp;关于
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/box/"
+                  
+                  
+                    target="_blank"
+                  
+                  id="box">
+									<i class='fas fa-tools fa-fw'></i>&nbsp;百宝箱
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="https://mi.aliyun.com/shop/40012"
+                  
+                  
+                    target="_blank"
+                  
+                  id="https:mi.aliyun.comshop40012">
+									<i class='fas fa-link fa-fw'></i>&nbsp;米店
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="http://cov.itrhx.com/"
+                  
+                  
+                    target="_blank"
+                  
+                  id="http:cov.itrhx.com">
+									<i class='fas fa-heart fa-fw'></i>&nbsp;肺炎疫情图
+								</a>
+							</li>
+      			
+      		
+				</ul>
+			</div>
+
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="Search" />
+						<i class="icon fas fa-search fa-fw"></i>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></a></li>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+        
+          <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
+        
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu navgation">
+      <ul>
+        
+          
+            <li>
+							<a class="nav flat-box" href="/"
+                
+                
+                id="home">
+								<i class='fas fa-home fa-fw'></i>&nbsp;主页
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/archives/"
+                
+                
+                id="archives">
+								<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/friends/"
+                
+                
+                id="friends">
+								<i class='fas fa-users fa-fw'></i>&nbsp;朋友
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/comments/"
+                
+                
+                id="comments">
+								<i class='fas fa-comments fa-fw'></i>&nbsp;留言
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" target="_blank" rel="noopener" href="https://mi.aliyun.com/shop/40012"
+                
+                
+                id="https:mi.aliyun.comshop40012">
+								<i class='fas fa-link fa-fw'></i>&nbsp;米店
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/box/"
+                
+                
+                id="box">
+								<i class='fas fa-tools fa-fw'></i>&nbsp;百宝箱
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" target="_blank" rel="noopener" href="https://itrhx.blog.csdn.net/"
+                
+                
+                id="https:itrhx.blog.csdn.net">
+								<i class='fab fa-cuttlefish fa-fw'></i>&nbsp;CSDN
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" target="_blank" rel="noopener" href="http://cov.itrhx.com/"
+                
+                
+                id="http:cov.itrhx.com">
+								<i class='fas fa-heart fa-fw'></i>&nbsp;肺炎疫情图
+							</a>
+            </li>
+          
+       
+      </ul>
+		</nav>
+    </header>
+	</aside>
+<script>setLoadingBarProgress(40);</script>
+
+</div>
+
+  <div class="l_body">
+    <div class='body-wrapper'>
+      <div class='l_main'>
+  
+
+  
+    <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
+      
+
+
+  <section class='meta'>
+    
+    
+      <a title='Python3 爬虫实战 — 瓜子全国二手车' href='/2020/09/17/A59-pyspider-guazi/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/TRHX/ImageHosting/ITRHX-PIC/thumbnail/combat.png'></a>
+    
+    <div class="meta" id="header-meta">
+      
+        
+  
+    <h1 class="title">
+      <a href="/2020/09/17/A59-pyspider-guazi/">
+        Python3 爬虫实战 — 瓜子全国二手车
+      </a>
+    </h1>
+  
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    <a href="https://ys-thx.github.io" rel="nofollow">
+      
+        <img src="https://cdn.jsdelivr.net/gh/YS-THX/ImageHost/YS-PIC/6ad063c19cf362ccdc33e011f364df0.png">
+      
+      <p>YS-THX</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2020-09-17</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/Python3-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%88%AC%E8%99%AB%E5%AE%9E%E6%88%98/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>Python3 学习笔记&nbsp;/&nbsp;爬虫实战</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+  
+    <div class="new-meta-item browse busuanzi">
+      <a class='notlink'>
+        <i class="fas fa-eye" aria-hidden="true"></i>
+        <p>
+          <span id="busuanzi_value_page_pv">
+            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+          </span>
+        </p>
+      </a>
+    </div>
+  
+
+
+          
+        
+          
+            
+  
+    <div class="new-meta-item wordcount">
+      <a class='notlink'>
+        <i class="fas fa-keyboard" aria-hidden="true"></i>
+        <p>字数统计:</p>
+        <p>3.5k字</p>
+      </a>
+    </div>
+    <div class="new-meta-item readtime">
+      <a class='notlink'>
+        <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+        <p>阅读时长≈</p>
+        <p>17分</p>
+      </a>
+    </div>
+  
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+      <section class="article typo">
+        <div class="article-entry" itemprop="articleBody">
+          <blockquote>
+<p>爬取时间：2019-11-14<br>爬取难度：★★☆☆☆☆<br>请求链接：<a target="_blank" rel="noopener" href="https://www.guazi.com/www/buy/">https://www.guazi.com/www/buy/</a><br>爬取目标：爬取瓜子全国二手车信息，包括价格、上牌时间、表显里程等；保存车辆图片<br>涉及知识：请求库 requests、解析库 lxml、Xpath 语法、数据库 MongoDB 的操作<br>完整代码：<a target="_blank" rel="noopener" href="https://github.com/TRHX/Python3-Spider-Practice/tree/master/guazi">https://github.com/TRHX/Python3-Spider-Practice/tree/master/guazi</a><br>其他爬虫实战代码合集（持续更新）：<a target="_blank" rel="noopener" href="https://github.com/TRHX/Python3-Spider-Practice">https://github.com/TRHX/Python3-Spider-Practice</a><br>爬虫实战专栏（持续更新）：<a target="_blank" rel="noopener" href="https://itrhx.blog.csdn.net/article/category/9351278">https://itrhx.blog.csdn.net/article/category/9351278</a></p>
+</blockquote>
+<hr>
+<a id="more"></a>
+
+<h1 id="【1x00】提取所有二手车详情页URL"><a href="#【1x00】提取所有二手车详情页URL" class="headerlink" title="【1x00】提取所有二手车详情页URL"></a><font color=#FF0000>【1x00】提取所有二手车详情页URL</font></h1><p>分析页面，按照习惯，最开始在 headers 里面只加入 User-Agent 字段，向主页发送请求，然而返回的东西并不是主页真正的源码，因此我们加入 Cookie，再次发起请求，即可得到真实数据。</p>
+<p>获取 Cookie：打开浏览器访问网站，打开开发工具，切换到 Network 选项卡，筛选 Doc 文件，在 Request Headers 里可以看到 Cookie 值。</p>
+<p><font color=#FF0000><strong>注意在爬取瓜子二手车的时候，User-Agent 与 Cookie 要对应一致，也就是直接复制 Request Headers 里的 User-Agent 和 Cookie，不要自己定义一个 User-Agent，不然有可能获取不到信息！</strong></font></p>
+<fancybox>
+![01](https://cdn.jsdelivr.net/gh/TRHX/ImageHosting/ITRHX-PIC/A59/01.png)
+</fancybox>
+
+<p>分析页面，请求地址为：<a target="_blank" rel="noopener" href="https://www.guazi.com/www/buy/">https://www.guazi.com/www/buy/</a></p>
+<p>第一页：<a target="_blank" rel="noopener" href="https://www.guazi.com/www/buy/">https://www.guazi.com/www/buy/</a></p>
+<p>第二页：<a target="_blank" rel="noopener" href="https://www.guazi.com/www/buy/o2c-1/">https://www.guazi.com/www/buy/o2c-1/</a></p>
+<p>第三页：<a target="_blank" rel="noopener" href="https://www.guazi.com/www/buy/o3c-1/">https://www.guazi.com/www/buy/o3c-1/</a></p>
+<p>一共有50页数据，利用 for 循环，每次改变 URL 中 <code>o2c-1</code> 参数里面的数字即可实现所有页面的爬取，由于我们是想爬取每台二手车详情页的数据，所以定义一个 <code>parse_index()</code> 函数，提取每一页的所有详情页的 URL，保存在列表 <code>url_list</code> 中</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 必须要有 Cookie 和 User-Agent，且两者必须对应（用浏览器访问网站后控制台里面复制）</span></span><br><span class="line">headers = &#123;</span><br><span class="line">    <span class="string">&#x27;Cookie&#x27;</span>: <span class="string">&#x27;uuid=06ce7520-ebd1-45bc-f41f-a95f2c9b2283; ganji_uuid=7044571161649671972745; lg=1; clueSourceCode=%2A%2300; user_city_id=-1; sessionid=fefbd4f8-0a06-4e8a-dc49-8856e1a02a07; Hm_lvt_936a6d5df3f3d309bda39e92da3dd52f=1573469368,1573541270,1573541964,1573715863; close_finance_popup=2019-11-14; cainfo=%7B%22ca_a%22%3A%22-%22%2C%22ca_b%22%3A%22-%22%2C%22ca_s%22%3A%22seo_baidu%22%2C%22ca_n%22%3A%22default%22%2C%22ca_medium%22%3A%22-%22%2C%22ca_term%22%3A%22-%22%2C%22ca_content%22%3A%22-%22%2C%22ca_campaign%22%3A%22-%22%2C%22ca_kw%22%3A%22-%22%2C%22ca_i%22%3A%22-%22%2C%22scode%22%3A%22-%22%2C%22keyword%22%3A%22-%22%2C%22ca_keywordid%22%3A%22-%22%2C%22display_finance_flag%22%3A%22-%22%2C%22platform%22%3A%221%22%2C%22version%22%3A1%2C%22client_ab%22%3A%22-%22%2C%22guid%22%3A%2206ce7520-ebd1-45bc-f41f-a95f2c9b2283%22%2C%22ca_city%22%3A%22wh%22%2C%22sessionid%22%3A%22fefbd4f8-0a06-4e8a-dc49-8856e1a02a07%22%7D; _gl_tracker=%7B%22ca_source%22%3A%22-%22%2C%22ca_name%22%3A%22-%22%2C%22ca_kw%22%3A%22-%22%2C%22ca_id%22%3A%22-%22%2C%22ca_s%22%3A%22self%22%2C%22ca_n%22%3A%22-%22%2C%22ca_i%22%3A%22-%22%2C%22sid%22%3A56473912809%7D; cityDomain=www; preTime=%7B%22last%22%3A1573720945%2C%22this%22%3A1573469364%2C%22pre%22%3A1573469364%7D; Hm_lpvt_936a6d5df3f3d309bda39e92da3dd52f=1573720946; rfnl=https://www.guazi.com/www/chevrolet/i2c-1r18/; antipas=675i0t513a7447M2L9y418Qq869&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;User-Agent&#x27;</span>: <span class="string">&#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取所有二手车详情页URL</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse_index</span>():</span></span><br><span class="line">    response = requests.get(url=url, headers=headers)</span><br><span class="line">    tree = etree.HTML(response.text)</span><br><span class="line">    url_list = tree.xpath(<span class="string">&#x27;//li/a[@class=&quot;car-a&quot;]/@href&#x27;</span>)</span><br><span class="line">    <span class="comment"># print(len(url_list))</span></span><br><span class="line">    <span class="keyword">return</span> url_list</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">51</span>):</span><br><span class="line">        url = <span class="string">&#x27;https://www.guazi.com/www/buy/o%sc-1/&#x27;</span> % i</span><br><span class="line">        detail_urls = parse_index()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="【2x00】获取二手车详细信息并保存图片"><a href="#【2x00】获取二手车详细信息并保存图片" class="headerlink" title="【2x00】获取二手车详细信息并保存图片"></a><font color=#FF0000>【2x00】获取二手车详细信息并保存图片</font></h1><p>前面的第一步我们已经获取到了二手车详情页的 URL，现在定义一个 <code>parse_detail()</code> 函数，向其中循环传入每一条 URL，利用 Xpath 语法匹配每一条信息，所有信息包含：<strong>标题、二手车价格、新车指导价、车主、上牌时间、表显里程、上牌地、排放标准、变速箱、排量、过户次数、看车地点、年检到期、交强险、商业险到期</strong>。</p>
+<p>其中有部分信息可能包含空格，可以用 strip() 方法将其去掉。</p>
+<p>需要注意的是，<strong>上牌地</strong>对应的是一个 <code>class=&quot;three&quot;</code> 的 <code>li</code> 标签，有些二手车没有上牌地信息，匹配的结果将是空，在数据储存时就有可能出现数组越界的错误信息，所以这里可以加一个判断，如果没有上牌地信息，可以将其赋值为：未知。</p>
+<p>保存车辆图片时，为了节省时间和空间，避免频繁爬取被封，所以只保存第一张图片，同样利用 Xpath 匹配到第一张图片的地址，以标题为图片的名称，定义储存路径后，以二进制形式保存图片。</p>
+<p>最后整个函数返回的是一个列表 <code>data</code>，这个列表包含每辆二手车的所有信息</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 获取二手车详细信息</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse_detail</span>(<span class="params">content</span>):</span></span><br><span class="line">    detail_response = requests.get(url=content, headers=headers)</span><br><span class="line">    tree = etree.HTML(detail_response.text)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 标题</span></span><br><span class="line">    title = tree.xpath(<span class="string">&#x27;//h2[@class=&quot;titlebox&quot;]/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># 移除字符串头尾空格</span></span><br><span class="line">    title = [t.strip() <span class="keyword">for</span> t <span class="keyword">in</span> title]</span><br><span class="line">    <span class="comment"># 匹配到两个元素，只取其中一个为标题</span></span><br><span class="line">    title = title[:<span class="number">1</span>]</span><br><span class="line">    <span class="comment"># print(title)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 价格</span></span><br><span class="line">    price_old = tree.xpath(<span class="string">&#x27;//span[@class=&quot;pricestype&quot;]/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># 移除字符串头尾空格</span></span><br><span class="line">    price_old = [p.strip() <span class="keyword">for</span> p <span class="keyword">in</span> price_old]</span><br><span class="line">    <span class="comment"># 加入单位</span></span><br><span class="line">    price_old = [<span class="string">&#x27;&#x27;</span>.join(price_old + [<span class="string">&#x27;万&#x27;</span>])]</span><br><span class="line">    <span class="comment"># print(price_old)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 新车指导价</span></span><br><span class="line">    price_new = tree.xpath(<span class="string">&#x27;//span[@class=&quot;newcarprice&quot;]/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># 移除字符串头尾空格</span></span><br><span class="line">    price_new = [p.strip() <span class="keyword">for</span> p <span class="keyword">in</span> price_new]</span><br><span class="line">    <span class="comment"># 对字符串进行切片，只取数字多少万</span></span><br><span class="line">    price_new = [<span class="string">&#x27;¥&#x27;</span> + price_new[<span class="number">0</span>].split(<span class="string">&#x27;价&#x27;</span>)[<span class="number">1</span>]]</span><br><span class="line">    <span class="comment"># print(price_new)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 车主</span></span><br><span class="line">    owner = tree.xpath(<span class="string">&#x27;//dl/dt/span/text()&#x27;</span>)</span><br><span class="line">    owner = [owner[<span class="number">0</span>].replace(<span class="string">&#x27;车主：&#x27;</span>, <span class="string">&#x27;&#x27;</span>)]</span><br><span class="line">    <span class="comment"># print(owner)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 上牌时间</span></span><br><span class="line">    spsj = tree.xpath(<span class="string">&#x27;//li[@class=&quot;one&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># print(spsj)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 表显里程</span></span><br><span class="line">    bxlc = tree.xpath(<span class="string">&#x27;//li[@class=&quot;two&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># print(bxlc)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 上牌地</span></span><br><span class="line">    spd = tree.xpath(<span class="string">&#x27;//li[@class=&quot;three&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># 某些二手车没有上牌地，没有的将其赋值为：未知</span></span><br><span class="line">    <span class="keyword">if</span> len(spd) == <span class="number">0</span>:</span><br><span class="line">        spd = [<span class="string">&#x27;未知&#x27;</span>]</span><br><span class="line">    <span class="comment"># print(spd)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 排放标准</span></span><br><span class="line">    pfbz = tree.xpath(<span class="string">&#x27;//li[@class=&quot;four&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    pfbz = pfbz[:<span class="number">1</span>]</span><br><span class="line">    <span class="comment"># print(pfbz)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 变速箱</span></span><br><span class="line">    bsx = tree.xpath(<span class="string">&#x27;//li[@class=&quot;five&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># print(bsx)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 排量</span></span><br><span class="line">    pl = tree.xpath(<span class="string">&#x27;//li[@class=&quot;six&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># print(pl)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 过户次数</span></span><br><span class="line">    ghcs = tree.xpath(<span class="string">&#x27;//li[@class=&quot;seven&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    ghcs = [g.strip() <span class="keyword">for</span> g <span class="keyword">in</span> ghcs]</span><br><span class="line">    ghcs = ghcs[:<span class="number">1</span>]</span><br><span class="line">    <span class="comment"># print(ghcs)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 看车地点</span></span><br><span class="line">    kcdd = tree.xpath(<span class="string">&#x27;//li[@class=&quot;eight&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># print(kcdd)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 年检到期</span></span><br><span class="line">    njdq = tree.xpath(<span class="string">&#x27;//li[@class=&quot;nine&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># print(njdq)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 交强险</span></span><br><span class="line">    jqx = tree.xpath(<span class="string">&#x27;//li[@class=&quot;ten&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># print(jqx)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 商业险到期</span></span><br><span class="line">    syxdq = tree.xpath(<span class="string">&#x27;//li[@class=&quot;last&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    syxdq = [s.strip() <span class="keyword">for</span> s <span class="keyword">in</span> syxdq]</span><br><span class="line">    syxdq = syxdq[:<span class="number">1</span>]</span><br><span class="line">    <span class="comment"># print(syxdq)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 保存车辆图片</span></span><br><span class="line">    <span class="comment"># 获取图片地址</span></span><br><span class="line">    pic_url = tree.xpath(<span class="string">&#x27;//li[@class=&quot;js-bigpic&quot;]/img/@data-src&#x27;</span>)[<span class="number">0</span>]</span><br><span class="line">    pic_response = requests.get(pic_url)</span><br><span class="line">    <span class="comment"># 定义图片名称以及保存的文件夹</span></span><br><span class="line">    pic_name = title[<span class="number">0</span>] + <span class="string">&#x27;.jpg&#x27;</span></span><br><span class="line">    dir_name = <span class="string">&#x27;guazi_pic&#x27;</span></span><br><span class="line">    <span class="comment"># 如果没有该文件夹则创建该文件夹</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(dir_name):</span><br><span class="line">        os.mkdir(dir_name)</span><br><span class="line">    <span class="comment"># 定义储存路径</span></span><br><span class="line">    pic_path = dir_name + <span class="string">&#x27;/&#x27;</span> + pic_name</span><br><span class="line">    <span class="keyword">with</span> open(pic_path, <span class="string">&quot;wb&quot;</span>)<span class="keyword">as</span> f:</span><br><span class="line">        f.write(pic_response.content)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 将每辆二手车的所有信息合并为一个列表</span></span><br><span class="line">    data = title + price_old + price_new + owner + spsj + bxlc + spd + pfbz + bsx + pl + ghcs + kcdd + njdq + jqx + syxdq</span><br><span class="line">    <span class="keyword">return</span> data</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">51</span>):</span><br><span class="line">        url = <span class="string">&#x27;https://www.guazi.com/www/buy/o%sc-1/&#x27;</span> % i</span><br><span class="line">        detail_urls = parse_index()</span><br><span class="line">        <span class="keyword">for</span> detail_url <span class="keyword">in</span> detail_urls:</span><br><span class="line">            car_url = <span class="string">&#x27;https://www.guazi.com&#x27;</span> + detail_url</span><br><span class="line">            car_data = parse_detail(car_url)</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="【3x00】将数据储存到-MongoDB"><a href="#【3x00】将数据储存到-MongoDB" class="headerlink" title="【3x00】将数据储存到 MongoDB"></a><font color=#FF0000>【3x00】将数据储存到 MongoDB</font></h1><p>定义数据储存函数 <code>save_data()</code></p>
+<p>使用 <code>MongoClient()</code> 方法，向其传入地址参数 <code>host</code> 和 端口参数 <code>port</code>，指定数据库为 <code>guazi</code>，集合为 <code>esc</code></p>
+<p>传入第二步 <code>parse_detail()</code> 函数返回的二手车信息的列表，依次读取其中的元素，每一个元素对应相应的信息名称</p>
+<p>最后调用 <code>insert_one()</code> 方法，每次插入一辆二手车的数据</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将数据储存到 MongoDB</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">save_data</span>(<span class="params">data</span>):</span></span><br><span class="line">    client = pymongo.MongoClient(host=<span class="string">&#x27;localhost&#x27;</span>, port=<span class="number">27017</span>)</span><br><span class="line">    db = client.guazi</span><br><span class="line">    collection = db.esc</span><br><span class="line">    esc = &#123;</span><br><span class="line">        <span class="string">&#x27;标题&#x27;</span>: data[<span class="number">0</span>],</span><br><span class="line">        <span class="string">&#x27;二手车价格&#x27;</span>: data[<span class="number">1</span>],</span><br><span class="line">        <span class="string">&#x27;新车指导价&#x27;</span>: data[<span class="number">2</span>],</span><br><span class="line">        <span class="string">&#x27;车主&#x27;</span>: data[<span class="number">3</span>],</span><br><span class="line">        <span class="string">&#x27;上牌时间&#x27;</span>: data[<span class="number">4</span>],</span><br><span class="line">        <span class="string">&#x27;表显里程&#x27;</span>: data[<span class="number">5</span>],</span><br><span class="line">        <span class="string">&#x27;上牌地&#x27;</span>: data[<span class="number">6</span>],</span><br><span class="line">        <span class="string">&#x27;排放标准&#x27;</span>: data[<span class="number">7</span>],</span><br><span class="line">        <span class="string">&#x27;变速箱&#x27;</span>: data[<span class="number">8</span>],</span><br><span class="line">        <span class="string">&#x27;排量&#x27;</span>: data[<span class="number">9</span>],</span><br><span class="line">        <span class="string">&#x27;过户次数&#x27;</span>: data[<span class="number">10</span>],</span><br><span class="line">        <span class="string">&#x27;看车地点&#x27;</span>: data[<span class="number">11</span>],</span><br><span class="line">        <span class="string">&#x27;年检到期&#x27;</span>: data[<span class="number">12</span>],</span><br><span class="line">        <span class="string">&#x27;交强险&#x27;</span>: data[<span class="number">13</span>],</span><br><span class="line">        <span class="string">&#x27;商业险到期&#x27;</span>: data[<span class="number">14</span>]</span><br><span class="line">    &#125;</span><br><span class="line">    collection.insert_one(esc)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">51</span>):</span><br><span class="line">        url = <span class="string">&#x27;https://www.guazi.com/www/buy/o%sc-1/&#x27;</span> % i</span><br><span class="line">        detail_urls = parse_index()</span><br><span class="line">        <span class="keyword">for</span> detail_url <span class="keyword">in</span> detail_urls:</span><br><span class="line">            car_url = <span class="string">&#x27;https://www.guazi.com&#x27;</span> + detail_url</span><br><span class="line">            car_data = parse_detail(car_url)</span><br><span class="line">            save_data(car_data)</span><br><span class="line">            <span class="comment"># 在3-10秒之间随机暂停</span></span><br><span class="line">            time.sleep(random.randint(<span class="number">3</span>, <span class="number">10</span>))</span><br><span class="line">        time.sleep(random.randint(<span class="number">5</span>, <span class="number">60</span>))</span><br><span class="line">    print(<span class="string">&#x27;所有数据爬取完毕！&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="【4x00】完整代码"><a href="#【4x00】完整代码" class="headerlink" title="【4x00】完整代码"></a><font color=#FF0000>【4x00】完整代码</font></h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># =============================================</span></span><br><span class="line"><span class="comment"># --*-- coding: utf-8 --*--</span></span><br><span class="line"><span class="comment"># @Time    : 2019-11-14</span></span><br><span class="line"><span class="comment"># @Author  : TRHX</span></span><br><span class="line"><span class="comment"># @Blog    : www.itrhx.com</span></span><br><span class="line"><span class="comment"># @CSDN    : https://blog.csdn.net/qq_36759224</span></span><br><span class="line"><span class="comment"># @FileName: guazi.py</span></span><br><span class="line"><span class="comment"># @Software: PyCharm</span></span><br><span class="line"><span class="comment"># =============================================</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> lxml <span class="keyword">import</span> etree</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> pymongo</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line"><span class="comment"># 必须要有 Cookie 和 User-Agent，且两者必须对应（用浏览器访问网站后控制台里面复制）</span></span><br><span class="line">headers = &#123;</span><br><span class="line">    <span class="string">&#x27;Cookie&#x27;</span>: <span class="string">&#x27;uuid=06ce7520-ebd1-45bc-f41f-a95f2c9b2283; ganji_uuid=7044571161649671972745; lg=1; clueSourceCode=%2A%2300; user_city_id=-1; sessionid=fefbd4f8-0a06-4e8a-dc49-8856e1a02a07; Hm_lvt_936a6d5df3f3d309bda39e92da3dd52f=1573469368,1573541270,1573541964,1573715863; close_finance_popup=2019-11-14; cainfo=%7B%22ca_a%22%3A%22-%22%2C%22ca_b%22%3A%22-%22%2C%22ca_s%22%3A%22seo_baidu%22%2C%22ca_n%22%3A%22default%22%2C%22ca_medium%22%3A%22-%22%2C%22ca_term%22%3A%22-%22%2C%22ca_content%22%3A%22-%22%2C%22ca_campaign%22%3A%22-%22%2C%22ca_kw%22%3A%22-%22%2C%22ca_i%22%3A%22-%22%2C%22scode%22%3A%22-%22%2C%22keyword%22%3A%22-%22%2C%22ca_keywordid%22%3A%22-%22%2C%22display_finance_flag%22%3A%22-%22%2C%22platform%22%3A%221%22%2C%22version%22%3A1%2C%22client_ab%22%3A%22-%22%2C%22guid%22%3A%2206ce7520-ebd1-45bc-f41f-a95f2c9b2283%22%2C%22ca_city%22%3A%22wh%22%2C%22sessionid%22%3A%22fefbd4f8-0a06-4e8a-dc49-8856e1a02a07%22%7D; _gl_tracker=%7B%22ca_source%22%3A%22-%22%2C%22ca_name%22%3A%22-%22%2C%22ca_kw%22%3A%22-%22%2C%22ca_id%22%3A%22-%22%2C%22ca_s%22%3A%22self%22%2C%22ca_n%22%3A%22-%22%2C%22ca_i%22%3A%22-%22%2C%22sid%22%3A56473912809%7D; cityDomain=www; preTime=%7B%22last%22%3A1573720945%2C%22this%22%3A1573469364%2C%22pre%22%3A1573469364%7D; Hm_lpvt_936a6d5df3f3d309bda39e92da3dd52f=1573720946; rfnl=https://www.guazi.com/www/chevrolet/i2c-1r18/; antipas=675i0t513a7447M2L9y418Qq869&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;User-Agent&#x27;</span>: <span class="string">&#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取所有二手车详情页URL</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse_index</span>():</span></span><br><span class="line">    response = requests.get(url=url, headers=headers)</span><br><span class="line">    tree = etree.HTML(response.text)</span><br><span class="line">    url_list = tree.xpath(<span class="string">&#x27;//li/a[@class=&quot;car-a&quot;]/@href&#x27;</span>)</span><br><span class="line">    <span class="comment"># print(len(url_list))</span></span><br><span class="line">    <span class="keyword">return</span> url_list</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取二手车详细信息</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse_detail</span>(<span class="params">content</span>):</span></span><br><span class="line">    detail_response = requests.get(url=content, headers=headers)</span><br><span class="line">    tree = etree.HTML(detail_response.text)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 标题</span></span><br><span class="line">    title = tree.xpath(<span class="string">&#x27;//h2[@class=&quot;titlebox&quot;]/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># 移除字符串头尾空格</span></span><br><span class="line">    title = [t.strip() <span class="keyword">for</span> t <span class="keyword">in</span> title]</span><br><span class="line">    <span class="comment"># 匹配到两个元素，只取其中一个为标题</span></span><br><span class="line">    title = title[:<span class="number">1</span>]</span><br><span class="line">    <span class="comment"># print(title)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 价格</span></span><br><span class="line">    price_old = tree.xpath(<span class="string">&#x27;//span[@class=&quot;pricestype&quot;]/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># 移除字符串头尾空格</span></span><br><span class="line">    price_old = [p.strip() <span class="keyword">for</span> p <span class="keyword">in</span> price_old]</span><br><span class="line">    <span class="comment"># 加入单位</span></span><br><span class="line">    price_old = [<span class="string">&#x27;&#x27;</span>.join(price_old + [<span class="string">&#x27;万&#x27;</span>])]</span><br><span class="line">    <span class="comment"># print(price_old)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 新车指导价</span></span><br><span class="line">    price_new = tree.xpath(<span class="string">&#x27;//span[@class=&quot;newcarprice&quot;]/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># 移除字符串头尾空格</span></span><br><span class="line">    price_new = [p.strip() <span class="keyword">for</span> p <span class="keyword">in</span> price_new]</span><br><span class="line">    <span class="comment"># 对字符串进行切片，只取数字多少万</span></span><br><span class="line">    price_new = [<span class="string">&#x27;¥&#x27;</span> + price_new[<span class="number">0</span>].split(<span class="string">&#x27;价&#x27;</span>)[<span class="number">1</span>]]</span><br><span class="line">    <span class="comment"># print(price_new)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 车主</span></span><br><span class="line">    owner = tree.xpath(<span class="string">&#x27;//dl/dt/span/text()&#x27;</span>)</span><br><span class="line">    owner = [owner[<span class="number">0</span>].replace(<span class="string">&#x27;车主：&#x27;</span>, <span class="string">&#x27;&#x27;</span>)]</span><br><span class="line">    <span class="comment"># print(owner)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 上牌时间</span></span><br><span class="line">    spsj = tree.xpath(<span class="string">&#x27;//li[@class=&quot;one&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># print(spsj)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 表显里程</span></span><br><span class="line">    bxlc = tree.xpath(<span class="string">&#x27;//li[@class=&quot;two&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># print(bxlc)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 上牌地</span></span><br><span class="line">    spd = tree.xpath(<span class="string">&#x27;//li[@class=&quot;three&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># 某些二手车没有上牌地，没有的将其赋值为：未知</span></span><br><span class="line">    <span class="keyword">if</span> len(spd) == <span class="number">0</span>:</span><br><span class="line">        spd = [<span class="string">&#x27;未知&#x27;</span>]</span><br><span class="line">    <span class="comment"># print(spd)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 排放标准</span></span><br><span class="line">    pfbz = tree.xpath(<span class="string">&#x27;//li[@class=&quot;four&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    pfbz = pfbz[:<span class="number">1</span>]</span><br><span class="line">    <span class="comment"># print(pfbz)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 变速箱</span></span><br><span class="line">    bsx = tree.xpath(<span class="string">&#x27;//li[@class=&quot;five&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># print(bsx)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 排量</span></span><br><span class="line">    pl = tree.xpath(<span class="string">&#x27;//li[@class=&quot;six&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># print(pl)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 过户次数</span></span><br><span class="line">    ghcs = tree.xpath(<span class="string">&#x27;//li[@class=&quot;seven&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    ghcs = [g.strip() <span class="keyword">for</span> g <span class="keyword">in</span> ghcs]</span><br><span class="line">    ghcs = ghcs[:<span class="number">1</span>]</span><br><span class="line">    <span class="comment"># print(ghcs)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 看车地点</span></span><br><span class="line">    kcdd = tree.xpath(<span class="string">&#x27;//li[@class=&quot;eight&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># print(kcdd)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 年检到期</span></span><br><span class="line">    njdq = tree.xpath(<span class="string">&#x27;//li[@class=&quot;nine&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># print(njdq)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 交强险</span></span><br><span class="line">    jqx = tree.xpath(<span class="string">&#x27;//li[@class=&quot;ten&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    <span class="comment"># print(jqx)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 商业险到期</span></span><br><span class="line">    syxdq = tree.xpath(<span class="string">&#x27;//li[@class=&quot;last&quot;]/div/text()&#x27;</span>)</span><br><span class="line">    syxdq = [s.strip() <span class="keyword">for</span> s <span class="keyword">in</span> syxdq]</span><br><span class="line">    syxdq = syxdq[:<span class="number">1</span>]</span><br><span class="line">    <span class="comment"># print(syxdq)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 保存车辆图片</span></span><br><span class="line">    <span class="comment"># 获取图片地址</span></span><br><span class="line">    pic_url = tree.xpath(<span class="string">&#x27;//li[@class=&quot;js-bigpic&quot;]/img/@data-src&#x27;</span>)[<span class="number">0</span>]</span><br><span class="line">    pic_response = requests.get(pic_url)</span><br><span class="line">    <span class="comment"># 定义图片名称以及保存的文件夹</span></span><br><span class="line">    pic_name = title[<span class="number">0</span>] + <span class="string">&#x27;.jpg&#x27;</span></span><br><span class="line">    dir_name = <span class="string">&#x27;guazi_pic&#x27;</span></span><br><span class="line">    <span class="comment"># 如果没有该文件夹则创建该文件夹</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(dir_name):</span><br><span class="line">        os.mkdir(dir_name)</span><br><span class="line">    <span class="comment"># 定义储存路径</span></span><br><span class="line">    pic_path = dir_name + <span class="string">&#x27;/&#x27;</span> + pic_name</span><br><span class="line">    <span class="keyword">with</span> open(pic_path, <span class="string">&quot;wb&quot;</span>)<span class="keyword">as</span> f:</span><br><span class="line">        f.write(pic_response.content)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 将每辆二手车的所有信息合并为一个列表</span></span><br><span class="line">    data = title + price_old + price_new + owner + spsj + bxlc + spd + pfbz + bsx + pl + ghcs + kcdd + njdq + jqx + syxdq</span><br><span class="line">    <span class="keyword">return</span> data</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 将数据储存到 MongoDB</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">save_data</span>(<span class="params">data</span>):</span></span><br><span class="line">    client = pymongo.MongoClient(host=<span class="string">&#x27;localhost&#x27;</span>, port=<span class="number">27017</span>)</span><br><span class="line">    db = client.guazi</span><br><span class="line">    collection = db.esc</span><br><span class="line">    esc = &#123;</span><br><span class="line">        <span class="string">&#x27;标题&#x27;</span>: data[<span class="number">0</span>],</span><br><span class="line">        <span class="string">&#x27;二手车价格&#x27;</span>: data[<span class="number">1</span>],</span><br><span class="line">        <span class="string">&#x27;新车指导价&#x27;</span>: data[<span class="number">2</span>],</span><br><span class="line">        <span class="string">&#x27;车主&#x27;</span>: data[<span class="number">3</span>],</span><br><span class="line">        <span class="string">&#x27;上牌时间&#x27;</span>: data[<span class="number">4</span>],</span><br><span class="line">        <span class="string">&#x27;表显里程&#x27;</span>: data[<span class="number">5</span>],</span><br><span class="line">        <span class="string">&#x27;上牌地&#x27;</span>: data[<span class="number">6</span>],</span><br><span class="line">        <span class="string">&#x27;排放标准&#x27;</span>: data[<span class="number">7</span>],</span><br><span class="line">        <span class="string">&#x27;变速箱&#x27;</span>: data[<span class="number">8</span>],</span><br><span class="line">        <span class="string">&#x27;排量&#x27;</span>: data[<span class="number">9</span>],</span><br><span class="line">        <span class="string">&#x27;过户次数&#x27;</span>: data[<span class="number">10</span>],</span><br><span class="line">        <span class="string">&#x27;看车地点&#x27;</span>: data[<span class="number">11</span>],</span><br><span class="line">        <span class="string">&#x27;年检到期&#x27;</span>: data[<span class="number">12</span>],</span><br><span class="line">        <span class="string">&#x27;交强险&#x27;</span>: data[<span class="number">13</span>],</span><br><span class="line">        <span class="string">&#x27;商业险到期&#x27;</span>: data[<span class="number">14</span>]</span><br><span class="line">    &#125;</span><br><span class="line">    collection.insert_one(esc)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">51</span>):</span><br><span class="line">        num = <span class="number">0</span></span><br><span class="line">        print(<span class="string">&#x27;正在爬取第&#x27;</span> + str(i) + <span class="string">&#x27;页数据...&#x27;</span>)</span><br><span class="line">        url = <span class="string">&#x27;https://www.guazi.com/www/buy/o%sc-1/&#x27;</span> % i</span><br><span class="line">        detail_urls = parse_index()</span><br><span class="line">        <span class="keyword">for</span> detail_url <span class="keyword">in</span> detail_urls:</span><br><span class="line">            car_url = <span class="string">&#x27;https://www.guazi.com&#x27;</span> + detail_url</span><br><span class="line">            car_data = parse_detail(car_url)</span><br><span class="line">            save_data(car_data)</span><br><span class="line">            num += <span class="number">1</span></span><br><span class="line">            print(<span class="string">&#x27;第&#x27;</span> + str(num) + <span class="string">&#x27;条数据爬取完毕！&#x27;</span>)</span><br><span class="line">            <span class="comment"># 在3-10秒之间随机暂停</span></span><br><span class="line">            time.sleep(random.randint(<span class="number">3</span>, <span class="number">10</span>))</span><br><span class="line">        print(<span class="string">&#x27;第&#x27;</span> + str(i) + <span class="string">&#x27;页数据爬取完毕！&#x27;</span>)</span><br><span class="line">        print(<span class="string">&#x27;=====================&#x27;</span>)</span><br><span class="line">        time.sleep(random.randint(<span class="number">5</span>, <span class="number">60</span>))</span><br><span class="line">    print(<span class="string">&#x27;所有数据爬取完毕！&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="【5x00】数据截图"><a href="#【5x00】数据截图" class="headerlink" title="【5x00】数据截图"></a><font color=#FF0000>【5x00】数据截图</font></h1><p><strong><font color=#1BC3FB>爬取的汽车图片：</font></strong></p>
+<fancybox>
+![02](https://cdn.jsdelivr.net/gh/TRHX/ImageHosting/ITRHX-PIC/A59/02.png)
+</fancybox>
+
+<p><strong><font color=#1BC3FB>储存到 MongoDB 的数据：</font></strong></p>
+<fancybox>
+![03](https://cdn.jsdelivr.net/gh/TRHX/ImageHosting/ITRHX-PIC/A59/03.png)
+</fancybox>
+
+<p><strong><font color=#1BC3FB>数据导出为 CSV 文件：</font></strong></p>
+<fancybox>
+![04](https://cdn.jsdelivr.net/gh/TRHX/ImageHosting/ITRHX-PIC/A59/04.png)
+</fancybox>
+
+<hr>
+<h1 id="【6x00】程序不足的地方"><a href="#【6x00】程序不足的地方" class="headerlink" title="【6x00】程序不足的地方"></a><font color=#FF0000>【6x00】程序不足的地方</font></h1><p>Cookie 过一段时间就会失效，数据还没爬取完就失效了，导致无法继续爬取；爬取效率不高，可以考虑多线程爬取</p>
+
+        </div>
+        <hr />
+        
+          <div id="reward">
+  
+  <div>您的喜欢是作者写作最大的动力！❤️</div>
+  
+  <div class="reward">
+    <a href="https://github.com/Kaiyuan/donate-page" target="_blank" class=" tr3" title="Github"><span
+        id="github"></span></a>
+    <ul id="RewardBox" class="list pos-f tr3">
+      
+      <li id="PayPal" title="PayPal打赏"><a href="https://paypal.me" target="_blank">PayPal</a></li>
+      
+      
+      <li id="AliPayOR" title="支付宝打赏">AliPay</li>
+      
+      
+      <li id="WeChatPayOR" title="微信打赏">WeChatPay</li>
+      
+      
+      <li id="QQPayOR" title="QQ打赏">QQPay</li>
+      
+    </ul>
+    <div id="RewardText" class="tr3">Donate</div>
+    <div id="QRBox" class="pos-f left-100">
+      <div id="MainBox"></div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+<script>
+  jQuery(document).ready(function () {
+    var QRBox = $('#QRBox');
+    var MainBox = $('#MainBox');
+    var AliPayOR = 'https://cdn.jsdelivr.net/gh/YS-THX/ImageHost/YS-PIC/0de1b8becd9a93bcc8a778d4f332f07.jpg';
+    var WeChatPayOR = 'https://cdn.jsdelivr.net/gh/YS-THX/ImageHost/YS-PIC/e1488492e64e4141e597506c2fa1e20.jpg';
+    var QQPayOR = 'https://cdn.jsdelivr.net/gh/YS-THX/ImageHost/YS-PIC/bc9407cd1bacb9b39cb8f8b82b7d0b2.png';
+
+    function showQR(QR) {
+      if (QR) {
+        MainBox.css('background-image', 'url(' + QR + ')');
+      }
+      $('#RewardText,#RewardBox,#github').addClass('blur');
+      QRBox.fadeIn(300, function (argument) {
+        MainBox.addClass('showQR');
+      });
+    }
+
+    $('#RewardBox>li').click(function (event) {
+      var thisID = $(this).attr('id');
+      if (thisID === 'AliPayOR') {
+        showQR(AliPayOR);
+      } else if (thisID === 'WeChatPayOR') {
+        showQR(WeChatPayOR);
+      } else if (thisID === 'QQPayOR') {
+        showQR(QQPayOR);
+      }
+    });
+
+    MainBox.click(function (event) {
+      MainBox.removeClass('showQR').addClass('hideQR');
+      setTimeout(function (a) {
+        QRBox.fadeOut(300, function (argument) {
+          MainBox.removeClass('hideQR');
+        });
+        $('#RewardText,#RewardBox,#github').removeClass('blur');
+      }, 600);
+
+    });
+  });
+</script>
+
+        
+        
+          
+
+
+  <section class='meta' id="footer-meta">
+    <hr>
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-17T00:24:47+08:00">
+  <a class='notlink'>
+    <i class="fas fa-clock" aria-hidden="true"></i>
+    <p>last updated at Sep 17, 2020</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%88%AC%E8%99%AB/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>爬虫</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%93%9C%E5%AD%90%E4%BA%8C%E6%89%8B%E8%BD%A6/" rel="nofollow"><i class="fas fa-tags" aria-hidden="true"></i>&nbsp;<p>瓜子二手车</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://ys-thx.github.io/2020/09/17/A59-pyspider-guazi/&title=Python3 爬虫实战 — 瓜子全国二手车 | YS-THX&pics=https://cdn.jsdelivr.net/gh/YS-THX/ImageHost/YS-PIC/6ad063c19cf362ccdc33e011f364df0.png&summary=
+爬取时间：2019-11-14爬取难度：★★☆☆☆☆请求链接：https://www.guazi.com/www/buy/爬取目标：爬取瓜子全国二手车信息，包括价格、上牌时间、表显里程等；保存车辆图片涉及知识：请求库 requests、解析库 lxml、Xpath 语法、数据库 MongoDB 的操作完整代码：https://github.com/TRHX/Python3-Spider-Practice/tree/master/guazi其他爬虫实战代码合集（持续更新）：https://github.com/TRHX/Python3-Spider-Practice爬虫实战专栏（持续更新）：https://itrhx.blog.csdn.net/article/category/9351278
+
+"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ys-thx.github.io/2020/09/17/A59-pyspider-guazi/&title=Python3 爬虫实战 — 瓜子全国二手车 | YS-THX&pics=https://cdn.jsdelivr.net/gh/YS-THX/ImageHost/YS-PIC/6ad063c19cf362ccdc33e011f364df0.png&summary=
+爬取时间：2019-11-14爬取难度：★★☆☆☆☆请求链接：https://www.guazi.com/www/buy/爬取目标：爬取瓜子全国二手车信息，包括价格、上牌时间、表显里程等；保存车辆图片涉及知识：请求库 requests、解析库 lxml、Xpath 语法、数据库 MongoDB 的操作完整代码：https://github.com/TRHX/Python3-Spider-Practice/tree/master/guazi其他爬虫实战代码合集（持续更新）：https://github.com/TRHX/Python3-Spider-Practice爬虫实战专栏（持续更新）：https://itrhx.blog.csdn.net/article/category/9351278
+
+"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png">
+          
+        </a>
+      
+    
+      
+        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACtElEQVR42u3a0WrEMAwEwP7/T19fCyXJSrKuV5g8hWtIPC7YZqWvr/h6/biqv9y/7eqZ6pOjCw8PD28w9KvX3d/fU38P6+qX+9/v3385BXh4eHhrvKsVNb+fbwC98TxY8PDw8D6Alxy4k1NudavAw8PD+4+85MCdP1+NKvDw8PA+jZcPKAka8onohRorWQseHh5ezKsegj/hfqW+h4eHhzeuqveKWNUYd3LUfhgtHh4e3gJv0jpQPVifavbKJwIPDw9vmzeJU/OYoPqeZLIeIg88PDy8BV6vUaCHSQ7QkzC3nKbg4eHhFXmnwoheSazaUlAOMvDw8PAWeHkgW20k7QW4p47yeHh4eNu8Xotqb2qSw/SkceEBiYeHh3eI1wsIeu1Z1QN3/vXyfwwPDw+vxZs3DZxqsUqW/oR0uCcCDw8P77ZpICnAVxf9PLzIGxcKpTs8PDy8Bd6ppqteeDGZrPweDw8P7yxvsrj31t5JW0A5CMbDw8Nb4PWGnm8A82as3raEh4eH905e+TxenI5qUW0SYeDh4eHt8fLWqCTqPQXIt5le4xceHh7ehFct8/eCg3wT6hXDop4yPDw8vDEvX7jnTVS9pq48CL4sgOHh4eEt8PIFvVr0yo/Rvc3jgY2Hh4e3wMs/1itc5c/32gWSScHDw8Pb5lWbBiaR66mjc2FjwMPDw1vgVRf63tuqAy0n03h4eHhv4VVLUNXjb7WolgMeCml4eHh4R3mv4lUNcJNtYLJpPXwXDw8Pb4GXXxsDyr+bT1YZhoeHh9fi9YpYeeBbPS7ff6UajuDh4eHt8SbdSmf/2tu0Lt+Gh4eH9wG86tG2WhLrNSg8pNR4eHh4f8rrBQpnN5XCdoKHh4e3xqs2WlUX7iRcmGw8x2JcPDw8vKMFsAkg6v+KG7YOhxp4eHh4Ke8bRSgdKSFnfAgAAAAASUVORK5CYII='>
+        
+          <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png">
+        
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://ys-thx.github.io/2020/09/17/A59-pyspider-guazi/&title=Python3 爬虫实战 — 瓜子全国二手车 | YS-THX&pics=https://cdn.jsdelivr.net/gh/YS-THX/ImageHost/YS-PIC/6ad063c19cf362ccdc33e011f364df0.png&summary=
+爬取时间：2019-11-14爬取难度：★★☆☆☆☆请求链接：https://www.guazi.com/www/buy/爬取目标：爬取瓜子全国二手车信息，包括价格、上牌时间、表显里程等；保存车辆图片涉及知识：请求库 requests、解析库 lxml、Xpath 语法、数据库 MongoDB 的操作完整代码：https://github.com/TRHX/Python3-Spider-Practice/tree/master/guazi其他爬虫实战代码合集（持续更新）：https://github.com/TRHX/Python3-Spider-Practice爬虫实战专栏（持续更新）：https://itrhx.blog.csdn.net/article/category/9351278
+
+"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png">
+          
+        </a>
+      
+    
+      
+        <a class='qrcode' rel="external nofollow noopener noreferrer" href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACtElEQVR42u3a0WrEMAwEwP7/T19fCyXJSrKuV5g8hWtIPC7YZqWvr/h6/biqv9y/7eqZ6pOjCw8PD28w9KvX3d/fU38P6+qX+9/v3385BXh4eHhrvKsVNb+fbwC98TxY8PDw8D6Alxy4k1NudavAw8PD+4+85MCdP1+NKvDw8PA+jZcPKAka8onohRorWQseHh5ezKsegj/hfqW+h4eHhzeuqveKWNUYd3LUfhgtHh4e3gJv0jpQPVifavbKJwIPDw9vmzeJU/OYoPqeZLIeIg88PDy8BV6vUaCHSQ7QkzC3nKbg4eHhFXmnwoheSazaUlAOMvDw8PAWeHkgW20k7QW4p47yeHh4eNu8Xotqb2qSw/SkceEBiYeHh3eI1wsIeu1Z1QN3/vXyfwwPDw+vxZs3DZxqsUqW/oR0uCcCDw8P77ZpICnAVxf9PLzIGxcKpTs8PDy8Bd6ppqteeDGZrPweDw8P7yxvsrj31t5JW0A5CMbDw8Nb4PWGnm8A82as3raEh4eH905e+TxenI5qUW0SYeDh4eHt8fLWqCTqPQXIt5le4xceHh7ehFct8/eCg3wT6hXDop4yPDw8vDEvX7jnTVS9pq48CL4sgOHh4eEt8PIFvVr0yo/Rvc3jgY2Hh4e3wMs/1itc5c/32gWSScHDw8Pb5lWbBiaR66mjc2FjwMPDw1vgVRf63tuqAy0n03h4eHhv4VVLUNXjb7WolgMeCml4eHh4R3mv4lUNcJNtYLJpPXwXDw8Pb4GXXxsDyr+bT1YZhoeHh9fi9YpYeeBbPS7ff6UajuDh4eHt8SbdSmf/2tu0Lt+Gh4eH9wG86tG2WhLrNSg8pNR4eHh4f8rrBQpnN5XCdoKHh4e3xqs2WlUX7iRcmGw8x2JcPDw8vKMFsAkg6v+KG7YOhxp4eHh4Ke8bRSgdKSFnfAgAAAAASUVORK5CYII='>
+        
+          <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png">
+        
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </section>
+
+
+        
+        
+            <div class="prev-next">
+                
+                    <section class="prev">
+                        <span class="art-item-left">
+                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;Previous</h6>
+                            <h4>
+                                <a href="/2020/09/17/A60-2019-summary/" rel="prev" title="2019年总结【跨越今天，更不平凡】">
+                                  
+                                      2019年总结【跨越今天，更不平凡】
+                                  
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <a class="tag" href="/tags/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;年终总结</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="/2020/09/17/A58-pyspider-58tongcheng/" rel="prev" title="Python3 爬虫实战 — 58同城武汉出租房【加密字体对抗】">
+                                    
+                                        Python3 爬虫实战 — 58同城武汉出租房【加密字体对抗】
+                                    
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <a class="tag" href="/tags/%E7%88%AC%E8%99%AB/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;爬虫</a> <a class="tag" href="/tags/58%E5%90%8C%E5%9F%8E/"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;58同城</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+            </div>
+        
+      </section>
+    </article>
+  
+
+  
+    <!-- 显示推荐文章和评论 -->
+
+
+
+  
+
+
+  
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: 'Python3 爬虫实战 — 瓜子全国二手车',
+      tools: true
+    }
+  </script>
+
+
+</div>
+<aside class='l_side'>
+  
+    
+    
+      
+        
+          
+          
+            <section class='widget author'>
+  <div class='content pure'>
+    
+      <div class='avatar'>
+        <img class='avatar' src='https://cdn.jsdelivr.net/gh/YS-THX/ImageHost/YS-PIC/6ad063c19cf362ccdc33e011f364df0.png'/>
+      </div>
+    
+    
+      <div class='text'>
+        
+          <h2>๑۩ﺴ&nbsp;&nbsp;YS-THX&nbsp;&nbsp;ﺴ۩๑</h2>
+        
+        
+        
+      </div>
+    
+    <!-- 彩色滚动字体 -->
+    <div id="binft" align="center"></div>
+    <script>
+      var binft = function (r) {
+        function t() {
+          return b[Math.floor(Math.random() * b.length)]
+        }  
+        function e() {
+          return String.fromCharCode(94 * Math.random() + 33)
+        }
+        function n(r) {
+          for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+            var l = document.createElement("span");
+            l.textContent = e(), l.style.color = t(), n.appendChild(l)
+          }
+          return n
+        }
+        function i() {
+          var t = o[c.skillI];
+          c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+        }
+        var l = "",
+        o = ["Stay Hungry, Stay Foolish!"].map(function (r) {
+        return r + ""
+        }),
+        a = 2,
+        g = 1,
+        s = 5,
+        d = 75,
+        b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
+        c = {
+          text: "",
+          prefixP: -s,
+          skillI: 0,
+          skillP: 0,
+          direction: "forward",
+          delay: a,
+          step: g
+        };
+        i()
+        };
+        binft(document.getElementById('binft'));
+    </script>
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="https://github.com/YS-THX"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://shuanyao.blog.csdn.net/"
+              class="social fab fa-cuttlefish flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://www.zhihu.com"
+              class="social fab fa-zhihu flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="mailto:admin@.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=227398&site=qq&menu=yes"
+              class="social fab fa-qq flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+          
+        
+      
+        
+          
+          
+            
+  <section class='widget toc-wrapper'>
+    
+<header class='pure'>
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;TOC</div>
+  
+    <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
+  
+</header>
+
+    <div class='content pure'>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E3%80%901x00%E3%80%91%E6%8F%90%E5%8F%96%E6%89%80%E6%9C%89%E4%BA%8C%E6%89%8B%E8%BD%A6%E8%AF%A6%E6%83%85%E9%A1%B5URL"><span class="toc-text">【1x00】提取所有二手车详情页URL</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E3%80%902x00%E3%80%91%E8%8E%B7%E5%8F%96%E4%BA%8C%E6%89%8B%E8%BD%A6%E8%AF%A6%E7%BB%86%E4%BF%A1%E6%81%AF%E5%B9%B6%E4%BF%9D%E5%AD%98%E5%9B%BE%E7%89%87"><span class="toc-text">【2x00】获取二手车详细信息并保存图片</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E3%80%903x00%E3%80%91%E5%B0%86%E6%95%B0%E6%8D%AE%E5%82%A8%E5%AD%98%E5%88%B0-MongoDB"><span class="toc-text">【3x00】将数据储存到 MongoDB</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E3%80%904x00%E3%80%91%E5%AE%8C%E6%95%B4%E4%BB%A3%E7%A0%81"><span class="toc-text">【4x00】完整代码</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E3%80%905x00%E3%80%91%E6%95%B0%E6%8D%AE%E6%88%AA%E5%9B%BE"><span class="toc-text">【5x00】数据截图</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E3%80%906x00%E3%80%91%E7%A8%8B%E5%BA%8F%E4%B8%8D%E8%B6%B3%E7%9A%84%E5%9C%B0%E6%96%B9"><span class="toc-text">【6x00】程序不足的地方</span></a></li></ol>
+    </div>
+  </section>
+
+
+          
+        
+      
+        
+          
+          
+            <section class='widget plain'>
+  
+<header class='pure'>
+  <div><i class="fas fa-blog fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;欢迎光临</div>
+  
+    <a class="rightBtn"
+    
+      rel="external nofollow noopener noreferrer"
+    
+    
+      target="_blank"
+    
+    href="https://shuanyao.blog.csdn.net/"
+    title="https://shuanyao.blog.csdn.net/">
+    <i class="fas fa-info-circle fa-fw"></i></a>
+  
+</header>
+
+  <div class='content pure'>
+    <p><a href="https://ys-thx.github.io/" title="微信扫描二维码添加好友"><img src="https://cdn.jsdelivr.net/gh/YS-THX/ImageHost/YS-PIC/0de1b8becd9a93bcc8a778d4f332f07.jpg"></a></p>
+
+  </div>
+</section>
+
+          
+        
+      
+        
+          
+          
+            <section class='widget plain'>
+  
+<header class='pure'>
+  <div><i class="fas fa-blog fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文邹邹的工具人</div>
+  
+    <a class="rightBtn"
+    
+      rel="external nofollow noopener noreferrer"
+    
+    
+      target="_blank"
+    
+    href="https://shuanyao.blog.csdn.net/"
+    title="https://shuanyao.blog.csdn.net/">
+    <i class="fas fa-info-circle fa-fw"></i></a>
+  
+</header>
+
+  <div class='content pure'>
+    <p><a href="https://ys-thx.github.io/" title="微信扫描二维码添加好友"><img src="https://cdn.jsdelivr.net/gh/YS-THX/ImageHost/YS-PIC/20200610152107390.png"></a></p>
+
+  </div>
+</section>
+
+          
+        
+      
+        
+          
+          
+            
+  <section class='widget category'>
+    
+<header class='pure'>
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Categories</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/categories/"
+    title="categories/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content pure'>
+      <ul class="entry">
+        
+          <li><a class="flat-box" title="/categories/BLOG/" href="/categories/BLOG/"><div class='name'>BLOG</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/CDN/" href="/categories/CDN/"><div class='name'>CDN</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/Golang/" href="/categories/Golang/"><div class='name'>Golang</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/Golang/WEB%E6%A1%86%E6%9E%B6/" href="/categories/Golang/WEB%E6%A1%86%E6%9E%B6/"><div class='name'>WEB框架</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/Golang/%E6%8F%90%E5%8D%87%E7%AF%87/" href="/categories/Golang/%E6%8F%90%E5%8D%87%E7%AF%87/"><div class='name'>提升篇</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/Golang/%E6%95%B0%E6%8D%AE%E5%BA%93/" href="/categories/Golang/%E6%95%B0%E6%8D%AE%E5%BA%93/"><div class='name'>数据库</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/Hexo/" href="/categories/Hexo/"><div class='name'>Hexo</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/Java/" href="/categories/Java/"><div class='name'>Java</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/Linux/" href="/categories/Linux/"><div class='name'>Linux</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/Markdown/" href="/categories/Markdown/"><div class='name'>Markdown</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/Python-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" href="/categories/Python-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"><div class='name'>Python 数据分析</div><div class='badge'>(27)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/Python-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/Matplotlib/" href="/categories/Python-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/Matplotlib/"><div class='name'>Matplotlib</div><div class='badge'>(11)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/Python-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/NumPy/" href="/categories/Python-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/NumPy/"><div class='name'>NumPy</div><div class='badge'>(6)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/Python-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/Pandas/" href="/categories/Python-%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/Pandas/"><div class='name'>Pandas</div><div class='badge'>(10)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/Python3-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" href="/categories/Python3-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><div class='name'>Python3 学习笔记</div><div class='badge'>(41)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/Python3-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" href="/categories/Python3-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/"><div class='name'>基础学习</div><div class='badge'>(9)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/Python3-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%AD%A6%E4%B9%A0%E7%BB%8F%E9%AA%8C/" href="/categories/Python3-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E5%AD%A6%E4%B9%A0%E7%BB%8F%E9%AA%8C/"><div class='name'>学习经验</div><div class='badge'>(4)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/Python3-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0/" href="/categories/Python3-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%88%AC%E8%99%AB%E5%AD%A6%E4%B9%A0/"><div class='name'>爬虫学习</div><div class='badge'>(18)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/Python3-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%88%AC%E8%99%AB%E5%AE%9E%E6%88%98/" href="/categories/Python3-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%88%AC%E8%99%AB%E5%AE%9E%E6%88%98/"><div class='name'>爬虫实战</div><div class='badge'>(10)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/VPS/" href="/categories/VPS/"><div class='name'>VPS</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/WEB%E5%89%8D%E7%AB%AF/" href="/categories/WEB%E5%89%8D%E7%AB%AF/"><div class='name'>WEB前端</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/" href="/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/"><div class='name'>分布式系统</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/" href="/categories/%E5%88%86%E5%B8%83%E5%BC%8F%E7%B3%BB%E7%BB%9F/%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/"><div class='name'>分布式锁</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/%E5%9B%BE%E5%BA%8A/" href="/categories/%E5%9B%BE%E5%BA%8A/"><div class='name'>图床</div><div class='badge'>(1)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
+
+          
+        
+      
+        
+          
+          
+            
+  <section class='widget tagcloud'>
+    
+<header class='pure'>
+  <div><i class="fas fa-fire fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;Hot Tags</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/tags/"
+    title="tags/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content pure'>
+      <a href="/tags/12306/" style="font-size: 14px; color: #999">12306</a> <a href="/tags/3D%E5%9B%BE/" style="font-size: 14px; color: #999">3D图</a> <a href="/tags/58%E5%90%8C%E5%9F%8E/" style="font-size: 14px; color: #999">58同城</a> <a href="/tags/Ajax/" style="font-size: 14px; color: #999">Ajax</a> <a href="/tags/BLOG/" style="font-size: 14px; color: #999">BLOG</a> <a href="/tags/Beautiful-Soup/" style="font-size: 14px; color: #999">Beautiful Soup</a> <a href="/tags/CDN/" style="font-size: 14px; color: #999">CDN</a> <a href="/tags/DataFrame/" style="font-size: 14px; color: #999">DataFrame</a> <a href="/tags/Deepin/" style="font-size: 14px; color: #999">Deepin</a> <a href="/tags/Elicpse/" style="font-size: 14px; color: #999">Elicpse</a> <a href="/tags/GoWEB%E6%A1%86%E6%9E%B6/" style="font-size: 14px; color: #999">GoWEB框架</a> <a href="/tags/Go%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 14px; color: #999">Go数据库</a> <a href="/tags/GroupBy/" style="font-size: 14px; color: #999">GroupBy</a> <a href="/tags/HTTPS/" style="font-size: 14px; color: #999">HTTPS</a> <a href="/tags/Hexo/" style="font-size: 17.33px; color: #828282">Hexo</a> <a href="/tags/IO%E6%93%8D%E4%BD%9C/" style="font-size: 15.67px; color: #8e8e8e">IO操作</a> <a href="/tags/Index/" style="font-size: 14px; color: #999">Index</a> <a href="/tags/JDBC/" style="font-size: 14px; color: #999">JDBC</a> <a href="/tags/JS-%E9%A2%84%E5%8A%A0%E8%BD%BD/" style="font-size: 14px; color: #999">JS 预加载</a> <a href="/tags/LaTeX/" style="font-size: 14px; color: #999">LaTeX</a> <a href="/tags/Markdown/" style="font-size: 15.67px; color: #8e8e8e">Markdown</a> <a href="/tags/Matplotlib/" style="font-size: 22.33px; color: #606060">Matplotlib</a> <a href="/tags/MongoDB/" style="font-size: 14px; color: #999">MongoDB</a> <a href="/tags/MySQL/" style="font-size: 14px; color: #999">MySQL</a> <a href="/tags/NumPy/" style="font-size: 19px; color: #777">NumPy</a> <a href="/tags/PEP8/" style="font-size: 14px; color: #999">PEP8</a> <a href="/tags/Pandas/" style="font-size: 20.67px; color: #6c6c6c">Pandas</a> <a href="/tags/PicGo/" style="font-size: 14px; color: #999">PicGo</a> <a href="/tags/Pygame/" style="font-size: 14px; color: #999">Pygame</a> <a href="/tags/Python/" style="font-size: 15.67px; color: #8e8e8e">Python</a> <a href="/tags/Redis/" style="font-size: 14px; color: #999">Redis</a> <a href="/tags/SEO/" style="font-size: 14px; color: #999">SEO</a> <a href="/tags/SQL-Server-2012/" style="font-size: 14px; color: #999">SQL Server 2012</a> <a href="/tags/SSR/" style="font-size: 14px; color: #999">SSR</a> <a href="/tags/Selenium/" style="font-size: 17.33px; color: #828282">Selenium</a> <a href="/tags/Series/" style="font-size: 14px; color: #999">Series</a> <a href="/tags/Ubuntu/" style="font-size: 14px; color: #999">Ubuntu</a> <a href="/tags/User-Agent/" style="font-size: 14px; color: #999">User-Agent</a> <a href="/tags/VMware/" style="font-size: 15.67px; color: #8e8e8e">VMware</a> <a href="/tags/VPS/" style="font-size: 14px; color: #999">VPS</a> <a href="/tags/XPath/" style="font-size: 14px; color: #999">XPath</a> <a href="/tags/gin/" style="font-size: 14px; color: #999">gin</a> <a href="/tags/if%E8%AF%AD%E5%8F%A5/" style="font-size: 14px; color: #999">if语句</a> <a href="/tags/input-%E5%87%BD%E6%95%B0/" style="font-size: 14px; color: #999">input()函数</a> <a href="/tags/instant-page/" style="font-size: 14px; color: #999">instant.page</a> <a href="/tags/jsDelivr/" style="font-size: 15.67px; color: #8e8e8e">jsDelivr</a> <a href="/tags/lxml/" style="font-size: 14px; color: #999">lxml</a> <a href="/tags/matplotibrc/" style="font-size: 14px; color: #999">matplotibrc</a> <a href="/tags/pyspider/" style="font-size: 15.67px; color: #8e8e8e">pyspider</a> <a href="/tags/requests/" style="font-size: 14px; color: #999">requests</a> <a href="/tags/sqlx/" style="font-size: 14px; color: #999">sqlx</a> <a href="/tags/urllib/" style="font-size: 14px; color: #999">urllib</a> <a href="/tags/while%E5%BE%AA%E7%8E%AF/" style="font-size: 14px; color: #999">while循环</a> <a href="/tags/%E4%BB%A3%E7%90%86/" style="font-size: 14px; color: #999">代理</a> <a href="/tags/%E4%BD%8D%E8%BF%90%E7%AE%97/" style="font-size: 14px; color: #999">位运算</a> <a href="/tags/%E5%87%BD%E6%95%B0/" style="font-size: 14px; color: #999">函数</a> <a href="/tags/%E5%87%BD%E6%95%B0%E5%BA%94%E7%94%A8/" style="font-size: 14px; color: #999">函数应用</a> <a href="/tags/%E5%88%86%E5%89%B2/" style="font-size: 14px; color: #999">分割</a> <a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/" style="font-size: 14px; color: #999">分布式锁</a> <a href="/tags/%E5%88%87%E7%89%87/" style="font-size: 14px; color: #999">切片</a> <a href="/tags/%E5%88%97%E8%A1%A8/" style="font-size: 14px; color: #999">列表</a> <a href="/tags/%E5%88%A4%E6%96%AD%E5%87%BD%E6%95%B0/" style="font-size: 14px; color: #999">判断函数</a> <a href="/tags/%E5%89%8D%E7%A8%8B%E6%97%A0%E5%BF%A7/" style="font-size: 14px; color: #999">前程无忧</a> <a href="/tags/%E5%8F%98%E9%87%8F/" style="font-size: 14px; color: #999">变量</a> <a href="/tags/%E5%90%88%E5%B9%B6%E6%95%B0%E6%8D%AE%E9%9B%86/" style="font-size: 14px; color: #999">合并数据集</a> <a href="/tags/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9/" style="font-size: 14px; color: #999">哔哩哔哩</a> <a href="/tags/%E5%9B%BE%E4%BE%8B/" style="font-size: 14px; color: #999">图例</a> <a href="/tags/%E5%9B%BE%E5%BA%8A/" style="font-size: 14px; color: #999">图床</a> <a href="/tags/%E5%9B%BE%E5%BD%A2%E9%AA%8C%E8%AF%81%E7%A0%81/" style="font-size: 14px; color: #999">图形验证码</a> <a href="/tags/%E5%A4%87%E4%BB%BD/" style="font-size: 14px; color: #999">备份</a> <a href="/tags/%E5%AD%90%E5%9B%BE/" style="font-size: 14px; color: #999">子图</a> <a href="/tags/%E5%AD%97%E5%85%B8/" style="font-size: 14px; color: #999">字典</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BD%E6%95%B0/" style="font-size: 14px; color: #999">字符串函数</a> <a href="/tags/%E5%AE%89%E5%B1%85%E5%AE%A2/" style="font-size: 14px; color: #999">安居客</a> <a href="/tags/%E5%B1%82%E7%BA%A7%E7%B4%A2%E5%BC%95/" style="font-size: 14px; color: #999">层级索引</a> <a href="/tags/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/" style="font-size: 14px; color: #999">年终总结</a> <a href="/tags/%E5%B9%BF%E6%92%AD/" style="font-size: 14px; color: #999">广播</a> <a href="/tags/%E5%BC%82%E5%B8%B8/" style="font-size: 14px; color: #999">异常</a> <a href="/tags/%E6%8A%80%E5%B7%A7/" style="font-size: 14px; color: #999">技巧</a> <a href="/tags/%E6%8B%BC%E6%8E%A5/" style="font-size: 14px; color: #999">拼接</a> <a href="/tags/%E6%8E%92%E5%BA%8F/" style="font-size: 14px; color: #999">排序</a> <a href="/tags/%E6%8E%92%E5%BA%8F%E5%87%BD%E6%95%B0/" style="font-size: 14px; color: #999">排序函数</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E5%88%97%E8%A1%A8/" style="font-size: 14px; color: #999">操作列表</a> <a href="/tags/%E6%95%A3%E7%82%B9%E5%9B%BE/" style="font-size: 14px; color: #999">散点图</a> <a href="/tags/%E6%95%B0%E5%AD%A6%E5%87%BD%E6%95%B0/" style="font-size: 14px; color: #999">数学函数</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E8%A3%82/" style="font-size: 14px; color: #999">数据分裂</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/" style="font-size: 14px; color: #999">数据可视化</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%90%88%E5%B9%B6/" style="font-size: 14px; color: #999">数据合并</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E6%9B%BF%E6%8D%A2/" style="font-size: 14px; color: #999">数据替换</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" style="font-size: 14px; color: #999">数据类型</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E8%AF%BB%E5%86%99/" style="font-size: 14px; color: #999">数据读写</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E9%87%8D%E5%A1%91/" style="font-size: 14px; color: #999">数据重塑</a> <a href="/tags/%E6%95%B0%E7%BB%84/" style="font-size: 15.67px; color: #8e8e8e">数组</a> <a href="/tags/%E6%96%87%E4%BB%B6/" style="font-size: 14px; color: #999">文件</a> <a href="/tags/%E6%96%87%E4%BB%B6%E5%82%A8%E5%AD%98/" style="font-size: 14px; color: #999">文件储存</a> <a href="/tags/%E6%97%A0%E7%95%8C%E9%9D%A2%E6%B5%8F%E8%A7%88%E5%99%A8/" style="font-size: 14px; color: #999">无界面浏览器</a> <a href="/tags/%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97/" style="font-size: 14px; color: #999">时间序列</a> <a href="/tags/%E6%98%A0%E5%B0%84/" style="font-size: 14px; color: #999">映射</a> <a href="/tags/%E6%9D%A1%E4%BB%B6%E5%87%BD%E6%95%B0/" style="font-size: 14px; color: #999">条件函数</a> <a href="/tags/%E6%9D%A1%E5%BD%A2%E5%9B%BE/" style="font-size: 14px; color: #999">条形图</a> <a href="/tags/%E6%9E%81%E5%8C%BA%E5%9B%BE/" style="font-size: 14px; color: #999">极区图</a> <a href="/tags/%E6%9E%81%E5%9D%90%E6%A0%87%E5%9B%BE/" style="font-size: 14px; color: #999">极坐标图</a> <a href="/tags/%E6%9F%B1%E7%8A%B6%E5%9B%BE/" style="font-size: 14px; color: #999">柱状图</a> <a href="/tags/%E6%A8%A1%E5%9D%97/" style="font-size: 14px; color: #999">模块</a> <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" style="font-size: 14px; color: #999">正则表达式</a> <a href="/tags/%E6%BB%91%E5%8A%A8%E9%AA%8C%E8%AF%81%E7%A0%81/" style="font-size: 14px; color: #999">滑动验证码</a> <a href="/tags/%E7%82%B9%E8%A7%A6%E9%AA%8C%E8%AF%81%E7%A0%81/" style="font-size: 14px; color: #999">点触验证码</a> <a href="/tags/%E7%88%AC%E8%99%AB/" style="font-size: 24px; color: #555">爬虫</a> <a href="/tags/%E7%8C%AB%E7%9C%BC%E7%94%B5%E5%BD%B1/" style="font-size: 14px; color: #999">猫眼电影</a> <a href="/tags/%E7%93%9C%E5%AD%90%E4%BA%8C%E6%89%8B%E8%BD%A6/" style="font-size: 14px; color: #999">瓜子二手车</a> <a href="/tags/%E7%94%BB%E5%B8%83/" style="font-size: 14px; color: #999">画布</a> <a href="/tags/%E7%9B%B4%E6%96%B9%E5%9B%BE/" style="font-size: 14px; color: #999">直方图</a> <a href="/tags/%E7%9F%A9%E9%98%B5/" style="font-size: 14px; color: #999">矩阵</a> <a href="/tags/%E7%AD%89%E5%80%BC%E7%BA%BF%E5%9B%BE/" style="font-size: 14px; color: #999">等值线图</a> <a href="/tags/%E7%AD%89%E9%AB%98%E7%BA%BF%E5%9B%BE/" style="font-size: 14px; color: #999">等高线图</a> <a href="/tags/%E7%AE%97%E6%9C%AF%E5%87%BD%E6%95%B0/" style="font-size: 14px; color: #999">算术函数</a> <a href="/tags/%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97/" style="font-size: 14px; color: #999">算术运算</a> <a href="/tags/%E7%B1%BB/" style="font-size: 14px; color: #999">类</a> <a href="/tags/%E7%B4%A2%E5%BC%95/" style="font-size: 15.67px; color: #8e8e8e">索引</a> <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" style="font-size: 14px; color: #999">线性代数</a> <a href="/tags/%E7%BA%BF%E6%80%A7%E5%9B%BE/" style="font-size: 14px; color: #999">线性图</a> <a href="/tags/%E7%BB%9F%E8%AE%A1%E5%87%BD%E6%95%B0/" style="font-size: 14px; color: #999">统计函数</a> <a href="/tags/%E7%BB%9F%E8%AE%A1%E6%8F%8F%E8%BF%B0/" style="font-size: 14px; color: #999">统计描述</a> <a href="/tags/%E7%BB%9F%E8%AE%A1%E8%AE%A1%E7%AE%97/" style="font-size: 14px; color: #999">统计计算</a> <a href="/tags/%E7%BB%A7%E6%89%BF/" style="font-size: 14px; color: #999">继承</a> <a href="/tags/%E7%BC%96%E8%BE%91%E5%99%A8/" style="font-size: 14px; color: #999">编辑器</a> <a href="/tags/%E7%BC%BA%E5%A4%B1%E5%80%BC/" style="font-size: 14px; color: #999">缺失值</a> <a href="/tags/%E7%BD%91%E6%A0%BC/" style="font-size: 14px; color: #999">网格</a> <a href="/tags/%E8%82%BA%E7%82%8E%E7%96%AB%E6%83%85/" style="font-size: 14px; color: #999">肺炎疫情</a> <a href="/tags/%E8%99%8E%E6%89%91%E8%AE%BA%E5%9D%9B/" style="font-size: 14px; color: #999">虎扑论坛</a> <a href="/tags/%E8%A1%A5%E4%B8%81/" style="font-size: 14px; color: #999">补丁</a> <a href="/tags/%E8%AF%BB%E5%86%99%E9%94%81/" style="font-size: 14px; color: #999">读写锁</a> <a href="/tags/%E8%B1%86%E7%93%A3%E7%94%B5%E5%BD%B1/" style="font-size: 14px; color: #999">豆瓣电影</a> <a href="/tags/%E8%BF%AD%E4%BB%A3/" style="font-size: 14px; color: #999">迭代</a> <a href="/tags/%E9%9B%B7%E8%BE%BE%E5%9B%BE/" style="font-size: 14px; color: #999">雷达图</a> <a href="/tags/%E9%A5%BC%E7%8A%B6%E5%9B%BE/" style="font-size: 14px; color: #999">饼状图</a>
+    </div>
+  </section>
+
+          
+        
+      
+        
+          
+          
+            
+
+
+  <section class='widget music'>
+    
+<header class='pure'>
+  <div><i class="fas fa-compact-disc fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;最近在听</div>
+  
+    <a class="rightBtn"
+    
+      rel="external nofollow noopener noreferrer"
+    
+    
+      target="_blank"
+    
+    href="https://music.163.com/#/user/home?id=3019271605"
+    title="https://music.163.com/#/user/home?id=3019271605">
+    <i class="far fa-heart fa-fw"></i></a>
+  
+</header>
+
+    <div class='content pure'>
+      
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
+  <div class="aplayer"
+    data-theme="#1BCDFC"
+    
+    
+    data-mode="circulation"
+    data-server="netease"
+    data-type="playlist"
+    data-id="3019271605"
+    data-volume="0.7">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
+
+
+    </div>
+  </section>
+
+
+          
+        
+      
+    
+
+  
+</aside>
+
+<footer id="footer" class="clearfix">
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="https://github.com/YS-THX"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://shuanyao.blog.csdn.net/"
+              class="social fab fa-cuttlefish flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://www.zhihu.com"
+              class="social fab fa-zhihu flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="mailto:admin@.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=227398&amp;site=qq&amp;menu=yes"
+              class="social fab fa-qq flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+      </div>
+    
+    <br>
+    Copyright <i class="far fa-copyright"></i> 2018-2021
+    <a href="https://ys-thx.github.io/" target="_blank"> YS-THX </a>丨
+    <img src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.9/images/icp.png" style="width:18px;height:18px;margin-bottom:-2px" alt="ICP">
+    <a href="http://www.beian.miit.gov.cn/" target="_blank">鄂ICP备19003281号-4</a>丨
+    <img src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.9/images/moeicp.png" style="width:18px;height:18px;margin-bottom:-3px" alt="MOE ICP">
+    <a href="https://icp.gov.moe/" target="_blank">萌ICP备20202022号</a>丨
+    <!-- 网站运行时间 -->
+    <span id="timeDate">正在载入...</span><span id="times"><span><i class="fa fa-spinner fa-spin"> </i></span></span>
+    <script>
+    var now = new Date(); 
+    function createtime() {
+      var grt= new Date("08/09/2020 17:38:00");//建站时间2018-08-10
+      now.setTime(now.getTime()+250); 
+      days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+      hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+      if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+      mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+      seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+      snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+      document.getElementById("timeDate").innerHTML = "本站已运行 "
+      document.getElementById("times").innerHTML = dnum +" 天 " + hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+      /*document.getElementById("times").style.color="#0056FF";*/
+      }
+      setInterval("createtime()",250);
+    </script>丨
+    <!--<a href="/sitemap.xml" target="_blank">站点地图</a>丨-->
+    <a href="https://tongji.baidu.com/web/welcome/ico?s=df0bc7c6bdbd80356ba4db429724ccad" target="_blank">百度统计</a>丨
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1275909280'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1275909280%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script><br><br>
+    <div class="github-badge">
+      <a style="color: #fff" rel="license" href="https://hexo.io/" target="_blank" title="由 Hexo 强力驱动">
+      <span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hexo</span></a>
+    </div>
+    <div class="github-badge">
+      <a style="color: #fff" rel="license" href="https://github.com/" target="_blank" title="静态网页托管于 GitHub Pages 和 Coding Pages">
+      <span class="badge-subject">Hosted</span><span class="badge-value bg-brightgreen">GitHub & Coding</span></a>
+    </div>
+    <div class="github-badge">
+      <a style="color: #fff" rel="license" href="https://www.aliyun.com/" target="_blank" title="阿里云提供域名相关服务">
+      <span class="badge-subject">DNS</span><span class="badge-value bg-blueviolet">Aliyun</span></a>
+    </div>
+    <div class="github-badge">
+      <a style="color: #fff" rel="license" href="https://www.jsdelivr.com/" target="_blank" title="jsDelivr 提供 CDN 加速服务">
+      <span class="badge-subject">CDN</span><span class="badge-value bg-orange">jsDelivr</span></a>
+    </div>
+    <div class="github-badge">
+        <a style="color: #fff" rel="license" href="https://xaoxuu.com/wiki/material-x/" target="_blank" title="站点使用 Material X 主题">
+      <span class="badge-subject">Theme</span><span class="badge-value bg-blue">Material X</span></a>
+    </div>
+    <div class="github-badge">
+      <a style="color: #fff" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="本站点采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可">
+      <span class="badge-subject"><i class="fa fa-copyright"></i></span><span class="badge-value bg-lightgrey">BY-NC-SA 4.0</span></a>
+    </div>
+    <div class="github-badge">
+      <a style="color: #fff" rel="license" href="https://996.icu/" target="_blank" title="支持 996.ICU">
+      <span class="badge-subject">Link</span><span class="badge-value bg-red">996.ICU</span></a>
+    </div>
+    <div class="github-badge">
+      <span class="badge-subject">UV</span><span class="badge-value bg-orange" id="busuanzi_value_site_uv"></span>
+    </div>
+    <div class="github-badge">
+      <span class="badge-subject">PV</span><span class="badge-value bg-brightgreen" id="busuanzi_value_site_pv"></span>
+    </div>
+    <div class="github-badge">
+      <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">292.7k</span>
+    </div>
+</footer>
+
+
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
+
+<script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.1.0/js/app.js"></script>
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.1.0/js/search.js"></script>
+
+
+
+
+
+<!-- 复制 -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  let COPY_SUCCESS = "Copied";
+  let COPY_FAILURE = "Copy failed";
+  /*页面载入完成后，创建复制按钮*/
+  !function (e, t, a) {
+    /* code */
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '  <i class="fa fa-copy"></i><span>Copy</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+
+      clipboard.on('success', function(e) {
+        //您可以加入成功提示
+        console.info('Action:', e.action);
+        console.info('Text:', e.text);
+        console.info('Trigger:', e.trigger);
+        success_prompt(COPY_SUCCESS);
+        e.clearSelection();
+      });
+      clipboard.on('error', function(e) {
+        //您可以加入失败提示
+        console.error('Action:', e.action);
+        console.error('Trigger:', e.trigger);
+        fail_prompt(COPY_FAILURE);
+      });
+    }
+    initCopyCode();
+
+  }(window, document);
+
+  /**
+   * 弹出式提示框，默认1.5秒自动消失
+   * @param message 提示信息
+   * @param style 提示样式，有alert-success、alert-danger、alert-warning、alert-info
+   * @param time 消失时间
+   */
+  var prompt = function (message, style, time)
+  {
+      style = (style === undefined) ? 'alert-success' : style;
+      time = (time === undefined) ? 1500 : time*1000;
+      $('<div>')
+          .appendTo('body')
+          .addClass('alert ' + style)
+          .html(message)
+          .show()
+          .delay(time)
+          .fadeOut();
+  };
+
+  // 成功提示
+  var success_prompt = function(message, time)
+  {
+      prompt(message, 'alert-success', time);
+  };
+
+  // 失败提示
+  var fail_prompt = function(message, time)
+  {
+      prompt(message, 'alert-danger', time);
+  };
+
+  // 提醒
+  var warning_prompt = function(message, time)
+  {
+      prompt(message, 'alert-warning', time);
+  };
+
+  // 信息提示
+  var info_prompt = function(message, time)
+  {
+      prompt(message, 'alert-info', time);
+  };
+
+</script>
+
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+  let LAZY_LOAD_IMAGE = "";
+  $(".article-entry").find("fancybox").find("img").each(function () {
+      var element = document.createElement("a");
+      $(element).attr("data-fancybox", "gallery");
+      $(element).attr("href", $(this).attr("src"));
+      /* 图片采用懒加载处理时,
+       * 一般图片标签内会有个属性名来存放图片的真实地址，比如 data-original,
+       * 那么此处将原本的属性名src替换为对应属性名data-original,
+       * 修改如下
+       */
+       if (LAZY_LOAD_IMAGE) {
+         $(element).attr("href", $(this).attr("data-original"));
+       }
+      $(this).wrap(element);
+  });
+</script>
+
+
+
+
+
+  <script>setLoadingBarProgress(100);</script>
+  <!-- 单击显示文字 -->
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/ClickShowText.js"></script> -->
+  <!-- 点击冒点 -->
+  <canvas width="1777" height="841" style="position: fixed; left: 0px; top: 0px; z-index: 2147483647; pointer-events: none;"></canvas><script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js"></script>
+  <!-- 浏览器搞笑标题 -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/FunnyTitle.js"></script>
+  <!-- 样式一（鼠标点击更换样式） -->
+  <!--<script src="https://g.joyinshare.com/hc/ribbon.min.js" type="text/javascript"></script>-->
+  <!-- 样式二（飘动的彩带） -->
+  <!--<script src="https://g.joyinshare.com/hc/piao.js" type="text/javascript"></script>-->
+  <!-- 数字雨 -->
+  <canvas id="canvas" width="1920" height="1080"></canvas>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/DigitalRain.js"></script>
+  <!--动态线条背景-->
+  <!--<script type="text/javascript" color="27,195,251" opacity='0.7' zIndex="-5" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>-->
+  <!-- 速度优化脚本 -->
+  <script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/instantclick-1.2.2.js" type="module"></script>
+  <!-- 悟空 -->
+  <!--<div id="wukong"><marquee direction="right"><img src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/images/wukong.gif"></marquee></div>-->
+  <!-- 雪花 -->
+  <!--<script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/snow1.js"></script> -->
+</body>
+</html>
