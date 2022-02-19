@@ -1,24 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ys-thx.github.io/2020/10/11/A08-41233-basic-C02/</loc>
-    <lastmod>2020-10-11</lastmod>
+    <loc>https://ys-thx.github.io/2021/03/01/A62-NumPy-01/</loc>
+    <lastmod>2021-09-20</lastmod>
   </url>
   <url>
-    <loc>https://ys-thx.github.io/2020/10/11/A08-44000003-basic-C02/</loc>
-    <lastmod>2020-10-11</lastmod>
+    <loc>https://ys-thx.github.io/2021/02/28/A67-NumPy-06/</loc>
+    <lastmod>2021-09-20</lastmod>
   </url>
   <url>
-    <loc>https://ys-thx.github.io/2020/10/11/A08-4455553-basic-C02/</loc>
-    <lastmod>2020-10-11</lastmod>
+    <loc>https://ys-thx.github.io/2021/02/27/A66-NumPy-05/</loc>
+    <lastmod>2021-09-20</lastmod>
   </url>
   <url>
-    <loc>https://ys-thx.github.io/2020/10/11/A08-44443-basic-C02/</loc>
-    <lastmod>2020-10-11</lastmod>
+    <loc>https://ys-thx.github.io/2021/02/28/A70-Matplotlib-03/</loc>
+    <lastmod>2021-09-20</lastmod>
   </url>
   <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A79-Pandas-01/</loc>
-    <lastmod>2020-09-16</lastmod>
+    <loc>https://ys-thx.github.io/2021/02/27/A69-Matplotlib-02/</loc>
+    <lastmod>2021-09-20</lastmod>
+  </url>
+  <url>
+    <loc>https://ys-thx.github.io/2021/02/26/A68-Matplotlib-01/</loc>
+    <lastmod>2021-09-20</lastmod>
+  </url>
+  <url>
+    <loc>https://ys-thx.github.io/2021/02/26/A65-NumPy-04/</loc>
+    <lastmod>2021-09-20</lastmod>
+  </url>
+  <url>
+    <loc>https://ys-thx.github.io/2021/02/25/A64-NumPy-03/</loc>
+    <lastmod>2021-09-20</lastmod>
+  </url>
+  <url>
+    <loc>https://ys-thx.github.io/2021/02/24/A63-NumPy-02/</loc>
+    <lastmod>2021-09-20</lastmod>
   </url>
   <url>
     <loc>https://ys-thx.github.io/2020/09/17/A76-Matplotlib-09/</loc>
@@ -61,55 +77,7 @@
     <lastmod>2020-09-16</lastmod>
   </url>
   <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A89-COVID-19/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
     <loc>https://ys-thx.github.io/2020/09/17/A78-Matplotlib-11/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A15-Python3-basic-C09/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A14-Python3-basic-C08/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A13-Python3-basic-C07/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A12-Python3-basic-C06/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A11-Python3-basic-C05/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A10-Python3-basic-C04/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A09-Python3-basic-C03/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A08-Python3-basic-C02/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A07-Python3-basic-C01/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A06-install-ubuntu18.04/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A05-markdown-editor/</loc>
     <lastmod>2020-09-16</lastmod>
   </url>
   <url>
@@ -141,50 +109,6 @@
     <lastmod>2020-09-16</lastmod>
   </url>
   <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A70-Matplotlib-03/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A69-Matplotlib-02/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A68-Matplotlib-01/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A67-NumPy-06/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A66-NumPy-05/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A65-NumPy-04/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A64-NumPy-03/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A63-NumPy-02/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A62-NumPy-01/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A61-build-a-SSR-server-with-VPS/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A60-2019-summary/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
     <loc>https://ys-thx.github.io/2020/09/17/A59-pyspider-guazi/</loc>
     <lastmod>2020-09-16</lastmod>
   </url>
@@ -209,10 +133,6 @@
     <lastmod>2020-09-16</lastmod>
   </url>
   <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A53-hexo-backup/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
     <loc>https://ys-thx.github.io/2020/09/17/A52-pyspider-doubantop250/</loc>
     <lastmod>2020-09-16</lastmod>
   </url>
@@ -226,10 +146,6 @@
   </url>
   <url>
     <loc>https://ys-thx.github.io/2020/09/17/A49-Python3-spider-C17/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A48-submit-search-engine-inclusion/</loc>
     <lastmod>2020-09-16</lastmod>
   </url>
   <url>
@@ -303,45 +219,5 @@
   <url>
     <loc>https://ys-thx.github.io/2020/09/17/A29-Python3-spider-C01/</loc>
     <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A27-image-hosting/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A26-hexo-add-https/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A24-instant.page/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A22-eclipse-connects-to-sql/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A21-PEP8/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A20-install-deepin15.9/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A19-install-pygame/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A18-free-cdn/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/17/A17-happy-new-year/</loc>
-    <lastmod>2020-09-16</lastmod>
-  </url>
-  <url>
-    <loc>https://ys-thx.github.io/2020/09/12/A03-markdown/</loc>
-    <lastmod>2020-09-12</lastmod>
   </url>
 </urlset> 
